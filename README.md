@@ -18,10 +18,10 @@
 
 10. WAP to perform following operations:
 
-1. Create a CSV file
+ 1. Create a CSV file
 
-2. Insert values
+ 2. Insert values
 
-3. Operate on multiple columns
+ 3. Operate on multiple columns
 
-4. Update and delete values
+ 4. Update and delete values
