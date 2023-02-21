@@ -20,7 +20,7 @@
 
 1. Create a CSV file
 
-2 Insert values
+2. Insert values
 
 3. Operate on multiple columns
 
