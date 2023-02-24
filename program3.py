@@ -22,3 +22,5 @@ print("Converting the string to uppercase:", uppercase_string)
 
 stripped_string = string.strip()
 print("Removing whitespace from the string:", stripped_string)
+
+print(string.find("world"))

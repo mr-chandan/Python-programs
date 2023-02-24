@@ -2,39 +2,50 @@
 
 import csv
 
-# Create a new CSV file and write header row
+# Create
 with open('example.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(['Name', 'Age', 'Gender', 'Occupation'])
+    csvfile.close()
 
-# Insert values into CSV file
+# Insert
 with open('example.csv', 'a', newline='') as csvfile:
     writer = csv.writer(csvfile)
-    writer.writerow(['John Doe', '32', 'Male', 'Software Engineer'])
-    writer.writerow(['Jane Smith', '27', 'Female', 'Data Analyst'])
-    writer.writerow(['Bob Johnson', '45', 'Male', 'Sales Manager'])
+    writer.writerow(['Ram', '32', 'Male', 'Software Engineer'])
+    writer.writerow(['bam', '27', 'Female', 'Data Analyst'])
+    writer.writerow(['sham', '45', 'Male', 'Sales Manager'])
+    csvfile.close()
 
-# Read values from CSV file and perform operations
+# Read
 with open('example.csv', 'r') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        # Operate on multiple columns
-        if int(row['Age']) > 30:
-            print(f"{row['Name']} is over 30 years old.")
+        print(row)
+    csvfile.close()
 
-        # Update value
-        if row['Name'] == 'Bob Johnson':
-            row['Occupation'] = 'Marketing Manager'
-            print(
-                f"{row['Name']}'s occupation has been updated to {row['Occupation']}.")
-
-# Delete value
+# Delete
 with open('example.csv', 'r') as csvfile:
-    rows = []
+    updaterow = []
+    reader = csv.reader(csvfile)
+    delname = input("Enter the name you want to delete : ")
+    for row in reader:
+        print(row)
+        if row[0] != delname:
+            updaterow.append(row)
+    with open('example.csv', 'w', newline='') as csvfile:
+        upd = csv.writer(csvfile)
+        upd.writerows(updaterow)
+
+# Update value
+with open('example.csv', 'r') as csvfile:
+    uprow = []
     reader = csv.reader(csvfile)
     for row in reader:
-        if row[0] != 'Jane Smith':
-            rows.append(row)
+        if row[0] != 'bam':
+            uprow.append(row)
+        else:
+            row[3] = 'Marketing Manager'
+            uprow.append(row)
     with open('example.csv', 'w', newline='') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerows(rows)
+        upd = csv.writer(csvfile)
+        upd.writerows(uprow)
