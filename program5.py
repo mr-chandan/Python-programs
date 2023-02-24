@@ -1,7 +1,6 @@
 # write a program to demonstrate mutability and immutability of python strings,lists,and tuples
 
 s = "hello"
-
 try:
      s[0] = "H"
 except:
