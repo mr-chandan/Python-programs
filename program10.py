@@ -29,9 +29,9 @@ with open('example.csv', 'r') as csvfile:
     reader = csv.reader(csvfile)
     delname = input("Enter the name you want to delete : ")
     for row in reader:
-        print(row)
         if row[0] != delname:
             updaterow.append(row)
+    print("Removed sucessfully")
     with open('example.csv', 'w', newline='') as csvfile:
         upd = csv.writer(csvfile)
         upd.writerows(updaterow)
@@ -46,6 +46,7 @@ with open('example.csv', 'r') as csvfile:
         else:
             row[3] = 'Marketing Manager'
             uprow.append(row)
+    print("Update Sucessfully")
     with open('example.csv', 'w', newline='') as csvfile:
         upd = csv.writer(csvfile)
         upd.writerows(uprow)
