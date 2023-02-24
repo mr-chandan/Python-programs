@@ -2,11 +2,11 @@
 
 
 def fibonacci_iterative(n):
-
+    fib_series = []
     a = 0
     b = 1
     while a <= n:
-        print(a)
+        fib_series.append(a)
         c = a + b
         a = b
         b = c
