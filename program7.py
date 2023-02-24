@@ -18,6 +18,10 @@ print(my_dict)  # {'apple': 1, 'banana': 5, 'orange': 3, 'grape': 4}
 my_dict_copy = my_dict.copy()
 print(my_dict_copy)  # {'apple': 1, 'banana': 5, 'orange': 3, 'grape': 4}
 
+my_dict.update({"pineapple": 5})
+# {'apple': 1, 'banana': 5, 'orange': 3, 'grape': 4},{"pineapple: 5"}
+print(my_dict)
+
 my_dict.pop("orange")
 print(my_dict)  # {'apple': 1, 'banana': 5, 'grape': 4}
 

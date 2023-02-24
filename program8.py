@@ -12,3 +12,7 @@ class MyClass:
 obj = MyClass()
 
 # The object will be destroyed automatically when it goes out of scope
+# or somethimes the garbage collector is trash u can forcefully removen the
+# object using the del keybord
+
+del obj 

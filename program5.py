@@ -4,7 +4,7 @@ s = "hello"
 try:
      s[0] = "H"
 except:
-    print("error occoured")     
+    print("error occoured in string")     
     
     
 l = [1, 2, 3]
@@ -20,4 +20,4 @@ t = (1, 2, 3)
 try:
      t[0] = 4
 except:
-    print("error occoured")    
+    print("error occoured in tuples")    
