@@ -25,4 +25,4 @@ n = int(input("Enter a number: "))
 print("Fibonacci series using iterative approach:", fibonacci_iterative(n))
 print("Fibonacci series using recursive approach:")
 for i in range(n+1):
-    print(fibonacci_recursive(i), end=" ")
+    print(fibonacci_recursive(i))
