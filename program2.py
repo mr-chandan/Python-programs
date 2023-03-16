@@ -23,5 +23,3 @@ while num <= end:
 
 print("The sum of even numbers between", start, "and", end, "using for loop is", sum_of_evens_for)
 print("The sum of even numbers between", start, "and", end, "using while loop is", sum_of_evens_while)
-
-

@@ -1,6 +1,5 @@
 # write a program to demonstrate dictionary operations: items,values,update,copy,keys etc
 
-
 my_dict = {"apple": 1, "banana": 2, "orange": 3}
 
 keys = my_dict.keys()

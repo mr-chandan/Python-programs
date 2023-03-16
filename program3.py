@@ -11,8 +11,11 @@ substring = "world"
 if substring in string:
     print("Substring found in the string.")
 
-joined_string = " ".join(words)
-print("Joining the list of words into a string:", joined_string)
+string1 = "good"
+string2 = "day"
+
+joined = string1 + string2 
+print("Joining the list of words into a string:", joined)
 
 new_string = string.replace("world", "Python")
 print("Modifying the string by replacing a substring:", new_string)
